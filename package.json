@@ -1,0 +1,46 @@
+{
+  "name": "MODENACEAC6XSIM",
+  "version": "4.0.0",
+  "private": true,
+  "scripts": {
+    "android":        "react-native run-android",
+    "android-tablet": "react-native run-android --deviceId $(adb devices | grep -v 'List' | grep 'device$' | head -1 | awk '{print $1}')",
+    "start":          "react-native start",
+    "start-reset":    "react-native start --reset-cache",
+    "build-debug":    "bash build_apk.sh",
+    "build-release":  "bash build_release.sh",
+    "lint":           "eslint src --ext .ts,.tsx",
+    "typecheck":      "tsc --noEmit",
+    "clean":          "cd android && ./gradlew clean && cd .."
+  },
+  "dependencies": {
+    "react":                                    "18.3.1",
+    "react-native":                             "0.76.5",
+    "@react-navigation/native":                 "^6.1.18",
+    "@react-navigation/bottom-tabs":            "^6.6.1",
+    "@react-navigation/native-stack":           "^6.11.0",
+    "react-native-screens":                     "^3.34.0",
+    "react-native-safe-area-context":           "^4.12.0",
+    "react-native-gesture-handler":             "^2.20.2",
+    "react-native-reanimated":                  "^3.16.1",
+    "zustand":                                  "^5.0.2",
+    "react-native-udp":                         "^4.2.0",
+    "@react-native-community/netinfo":          "^11.4.1",
+    "react-native-svg":                         "^15.9.0",
+    "@react-native-async-storage/async-storage":"^2.1.0",
+    "react-native-signature-canvas":            "^4.7.2",
+    "babel-plugin-module-resolver":             "^5.0.2"
+  },
+  "devDependencies": {
+    "@babel/core":                "^7.25.2",
+    "@react-native/babel-preset": "0.76.5",
+    "@react-native/eslint-config":"0.76.5",
+    "@react-native/metro-config": "0.76.5",
+    "@types/react":               "^18.3.12",
+    "@types/react-native":        "^0.73.0",
+    "typescript":                 "^5.3.3",
+    "babel-plugin-module-resolver":"^5.0.2"
+  },
+  "engines": { "node": ">=18" },
+  "jest": { "preset": "react-native" }
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base — sin barra de título, pantalla completa -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/statusbar</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Optimización tablet: no adaptar layout a teclado virtual -->
+        <item name="android:windowSoftInputMode">adjustResize</item>
+    </style>
+</resources>

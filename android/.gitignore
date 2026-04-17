@@ -1,0 +1,17 @@
+# Android build outputs
+/app/build/
+/build/
+
+# Gradle
+.gradle/
+local.properties
+
+# Keystores (NUNCA subir a git)
+/app/debug.keystore
+/keystores/release.keystore
+*.keystore
+*.jks
+
+# IDE
+.idea/
+*.iml
