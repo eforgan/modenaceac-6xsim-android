@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- MODENACEAC 6XSIM — Colores de la app -->
 <resources>
-    <color name="background">#F5F4F0</color>
-    <color name="statusbar">#FFFFFF</color>
+    <!-- Primarios -->
     <color name="primary">#185FA5</color>
+    <color name="primary_dark">#0C447C</color>
+    <color name="primary_light">#E6F1FB</color>
+    <!-- Acento dorado -->
+    <color name="accent">#C8A84B</color>
+    <color name="accent_light">#E8C96A</color>
+    <!-- Splash -->
+    <color name="splash_background">#0C2C7C</color>
+    <!-- Status bar -->
+    <color name="status_bar">#0C447C</color>
+    <!-- Colores semánticos -->
+    <color name="green">#1D9E75</color>
+    <color name="red">#A32D2D</color>
+    <color name="amber">#BA7517</color>
+    <!-- Launcher icon background -->
+    <color name="ic_launcher_background">#0C2C7C</color>
 </resources>

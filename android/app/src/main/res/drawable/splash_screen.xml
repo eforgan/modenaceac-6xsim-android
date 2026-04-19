@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- MODENACEAC 6XSIM — Splash Screen drawable -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo azul oscuro -->
+    <item android:drawable="@color/splash_background"/>
+    <!-- Logo centrado -->
+    <item>
+        <bitmap
+            android:src="@drawable/splash_bg"
+            android:gravity="center"
+            android:tileMode="disabled"/>
+    </item>
+</layer-list>
