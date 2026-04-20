@@ -211,14 +211,8 @@ export interface ConfigSesion {
 }
 
 // ── Maniobras ─────────────────────────────────────────────────────────────
+// Maniobra interface with full details is defined in src/data/fallas.ts
 export type ResultadoManiobra = 'AS' | 'S' | 'SB' | 'NA';
-
-export interface Maniobra {
-  id:          string;
-  nombre:      string;
-  categoria:   string;
-  descripcion: string;
-}
 
 export interface ManiobrasEval {
   maniobra_id:   string;
